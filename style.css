@@ -1,0 +1,152 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('fransisco.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.sticky-menu {
+    position: sticky;
+    top: 0;
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.sticky-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+.sticky-menu a:hover {
+    text-decoration: underline;
+}
+.sticky-ad {
+    position: fixed;
+    top: 100px;
+    z-index: 1000;
+}
+
+.left-ad {
+    left: 10px;
+}
+
+.right-ad {
+    right: 10px;
+}
+
+.sticky-ad img {
+    max-width: 120px;
+    display: block;
+}
+.close-ad {
+    display: block;
+    margin-top: 0px;
+    background: rgb(255, 38, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 16px;
+    position: absolute;
+    top: 0; 
+    right: 0;
+    border-radius: 0;
+    padding: 3px 3px;
+    z-index: 1; 
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 80px auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+.name-group {
+    display: flex;
+    gap: 60px;
+    width: 100%;
+}
+.name-group input {
+    width: 30%;
+}
+.phone-group {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+    
+}
+
+.phone-group select {
+    width: 19%;
+}
+
+.phone-group input {
+    width: 45%;
+}
+
+input, select, button {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    width: 65%;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-left: 18%;
+}
+
+button:hover {
+    background: #218838;
+
+}
+.company-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 34px;
+    width: 118%;
+}
+.email-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 63px;
+    width: 113%;
+}
+.subject-group{
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 49px; 
+    width: 118%;
+}

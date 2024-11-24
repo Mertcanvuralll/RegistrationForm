@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sticky-ad left-ad">
+        <a href="https://www.adobe.com/tr/products/special-offers.html?sdid=KCJMVG16&mv=display&mv2=display" target="_blank"><img src="ads1112.jpg" alt="Ad Left"></a>
+        <button class="close-ad">X</button>
+    </div>
+    <div class="sticky-ad right-ad">
+        <a href="https://www.adobe.com/tr/products/special-offers.html?sdid=KCJMVG16&mv=display&mv2=display" target="_blank"><img src="ads1112.jpg" alt="Ad Right"></a>
+        <button class="close-ad">X</button>
+    </div>
+
+    <nav class="sticky-menu">
+        <a href="empty.html">Home</a>
+        <a href="empty.html">Categories</a>
+        <a href="empty.html">About</a>
+        <a href="empty.html">Contact</a>
+    </nav>
+
+    <div class="form-container">
+        <form id="registrationForm" action="submitted.html" method="post">
+            <h1>Registration Form</h1>
+
+            <div class="form-group name-group">
+                <label for="name"><br>Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                  <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+              </div>
+  
+
+            <div class="form-group company-group">
+                <label for="company"><br>Company</label>
+                <select id="company" name="company" required>
+                    <option value="">Company</option>
+                    <option value="company1">Company 1</option>
+                    <option value="company2">Company 2</option>
+                </select>
+            </div>
+
+            <div class="form-group email-group">
+                <label for="email"><br>Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="form-group phone-group">
+                <label for="phone"><br>Phone</label>
+                <select id="areaCode" name="areaCode" required>
+                    <option value="">Area Code</option>
+                </select>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+            </div>
+
+            <div class="form-group subject-group">
+                <label for="subject"><br>Subject</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Choose option...</option>
+                    <option value="subject1">Subject 1</option>
+                    <option value="subject2">Subject 2</option>
+                </select>
+            </div>
+
+            <div class="form-group beginner-group">
+                <label>Are you a beginner?</label>
+                <div>
+                    <input type="radio" id="yes" name="beginner" value="yes" required>
+                    <label for="yes">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" id="no" name="beginner" value="no" required>
+                    <label for="no">No</label>
+                </div>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
